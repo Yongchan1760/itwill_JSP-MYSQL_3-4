@@ -1,0 +1,23 @@
+<Context>
+
+<!-- 커넷션플 설정(db연결정보를 이용하여 커넥션 객체들을 생성하는 설정 )
+   		톰켓실행시 connection pool로 연결할 데이터베이스 접속 정보를 설정하는 소스
+   		
+   		name이름 마음대로 설정가능 
+   		maxActive="" 커넥션 풀안에 커넥션 객체를 몇개나 심어놓을지 최대접속개수 설정
+   		 maxWait="-1" 새로 생기기까지 필요한 시간
+   		 dao에서 불러서 사용할예정
+   -->
+   
+   <Resource 
+   	name="jdbc/oracle"
+    auth="Container"
+    type="javax.sql.DataSource"
+    driverClassName="oracle.jdbc.OracleDriver"
+    url="jdbc:oracle:thin:@localhost:1521:XE"
+    username="scott"
+    password="tiger"
+    maxActive="50"
+    maxWait="-1"
+   />
+</Context>
