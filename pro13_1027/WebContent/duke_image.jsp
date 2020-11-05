@@ -19,6 +19,7 @@
 <body>
 	  <br><br>
 	  <h1>이름은 <%=name %>입니다.</h1>	
+	  <br>
 	  <br><br>
 	  <img src="./image/<%=imgName%>" />
 	  
